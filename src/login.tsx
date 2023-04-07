@@ -1,9 +1,7 @@
 import "./login.css";
-import "./assets/1.png";
-import "./assets/2.png";
 import "./assets/arrow-forward.svg";
 
-const Login = () => {
+const LogIn = () => {
   function openSignUpCard() {
     const box = document.querySelector(".glassBox") as HTMLElement;
     box.style.height = "0%";
@@ -19,30 +17,34 @@ const Login = () => {
 
   return (
     <div className="logInCard">
-      <h1>Log In</h1>
-      <input type="text" placeholder="Username" />
-      <input type="password" placeholder="Password" />
-      <div className="buttonBox">
-        <button className="signUpButton">Sign Up</button>
-        <button>
-          <svg
-            width="34"
-            height="52"
-            viewBox="0 0 34 52"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6 6L28 26L6 46"
-              stroke="black"
-              stroke-width="12"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
+      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+        <div>
+          <h1>Log In</h1>
+          <p>
+            not registered yet? <b onClick={() => openSignUpCard()}>sign up</b>
+          </p>
+        </div>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
       </div>
+      <button style={{ placeSelf: "flex-end" }}>
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 34 52"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6 6L28 26L6 46"
+            stroke="white"
+            strokeWidth="8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </button>
     </div>
   );
 };
 
-export default Login;
+export default LogIn;

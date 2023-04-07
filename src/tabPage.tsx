@@ -1,9 +1,7 @@
-import "./loginn.css";
-import "./assets/1.png";
-import "./assets/2.png";
+import "./login.css";
 import "./assets/arrow-forward.svg";
 import SignUp from "./signup";
-import LogIn from "./loginn";
+import LogIn from "./login";
 
 const TabPage = () => {
   return (
