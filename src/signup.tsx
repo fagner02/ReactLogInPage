@@ -16,10 +16,12 @@ const SignUp = () => {
 
   return (
     <div className="signUpCard">
-      <h1>Sign Up</h1>
-      <p>
-        already registered? <b onClick={() => openLogInCard()}>log in</b>
-      </p>
+      <div className="title">
+        <h1>Sign Up</h1>
+        <p>
+          already registered? <b onClick={() => openLogInCard()}>log in</b>
+        </p>
+      </div>
       <input type="text" placeholder="Username" />
       <input type="text" placeholder="Email" />
       <input type="password" placeholder="Password" />

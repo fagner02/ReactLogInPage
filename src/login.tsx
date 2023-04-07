@@ -18,7 +18,7 @@ const LogIn = () => {
   return (
     <div className="logInCard">
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        <div>
+        <div className="title">
           <h1>Log In</h1>
           <p>
             not registered yet? <b onClick={() => openSignUpCard()}>sign up</b>

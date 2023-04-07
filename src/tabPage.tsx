@@ -11,16 +11,18 @@ const TabPage = () => {
         display: "flex",
         flexDirection: "column",
       }}>
-      <div className="backgroundCard"></div>
-      <div className="ball"></div>
-      <div className="ball"></div>
-      <div className="ball"></div>
-
-      <div className="padding">
-        <div className="glassBox">
-          <div className="padding2">
-            <LogIn></LogIn>
-            <SignUp></SignUp>
+      <div className="backGrid">
+        <div className="background">
+          <div className="ball"></div>
+          <div className="ball"></div>
+          <div className="ball"></div>
+        </div>
+        <div className="padding" style={{ gridArea: "unit" }}>
+          <div className="glassBox">
+            <div className="padding2">
+              <LogIn></LogIn>
+              <SignUp></SignUp>
+            </div>
           </div>
         </div>
       </div>
