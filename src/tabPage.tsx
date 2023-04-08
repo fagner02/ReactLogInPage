@@ -16,6 +16,7 @@ const TabPage = () => {
           <div className="ball"></div>
           <div className="ball"></div>
           <div className="ball"></div>
+          <div className="ball"></div>
         </div>
         <div className="padding" style={{ gridArea: "unit" }}>
           <div className="glassBox">
